@@ -12,11 +12,11 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey("d"))
         {
-            rb.AddForce(movementSpeed*Time.deltaTime, 0, 0);
+            rb.AddForce(movementSpeed*Time.deltaTime, 0, 0,ForceMode.VelocityChange);
         }
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-movementSpeed * Time.deltaTime, 0, 0);
+            rb.AddForce(-movementSpeed * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
     }
 }
