@@ -356,8 +356,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CalculateScore.cs"
 "Assets/Scripts/FollowPlayer.cs"
+"Assets/Scripts/Manager.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/PlayerCollision.cs"
+"Assets/Scripts/TriggerWin.cs"
 -langversion:9.0
 
 /deterministic

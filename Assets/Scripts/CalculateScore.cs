@@ -9,15 +9,14 @@ public class CalculateScore : MonoBehaviour
     public Text scoreText;
     void Update()
     {
-        if (player.position.y < 1)
-        {
-            scoreText.text = "Game Over!";
-            movement.enabled = false;
-        }
-        else
-        {
-            scoreText.text = player.position.z.ToString("0");
-        }
-
+       scoreText.text = player.position.z.ToString("0");
+    }
+    public void showGameOver()
+    {
+        scoreText.text = "Game Over!";
+    }
+    public void showGameWon()
+    {
+        scoreText.text = "Level Complete!";
     }
 }

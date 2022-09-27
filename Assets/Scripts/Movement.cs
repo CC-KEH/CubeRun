@@ -18,5 +18,9 @@ public class Movement : MonoBehaviour
         {
             rb.AddForce(-movementSpeed * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
+        if(transform.position.y < -1)
+        {
+            FindObjectOfType<Manager>().EndGame();
+        }
     }
 }
